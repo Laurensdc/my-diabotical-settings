@@ -33,7 +33,7 @@ game t chat
 game y tag
 game o pick prev
 game p pick
-game return chat
+game return 
 game control move_down
 game a move_left
 game s move_back
