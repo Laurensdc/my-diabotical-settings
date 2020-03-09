@@ -74,14 +74,18 @@ editor control move_down
 editor a move_left
 editor s move_back
 editor d move_right
+editor f op tool 0
 editor h toggle phy_fly
 editor k kill
 editor l slicepull
 editor grave console
-editor b talk
+editor x op tool 0
+editor c op tool 3
+editor b 
 editor m toggle hud_minimap
 editor num_multiply op brush_bigger
-editor f4 toggle editor_play
+editor alt talk
+editor f4 toggle dev_debug 0 1 2
 editor f5 dotell editor_snap 0.01
 editor f6 dotell editor_snap 0.05
 editor f7 dotell editor_snap 0.25
