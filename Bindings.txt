@@ -8,6 +8,8 @@ game mouse_wheel_up weapon_prev
 game mouse_wheel_down weapon_next
 editor mouse_left attack
 editor mouse_right move_up
+editor mouse_extra_1 toggle phy fly
+editor mouse_extra_2 toggle phy fly
 editor mouse_wheel_up push
 editor mouse_wheel_down pull
 shop mouse_left attack
@@ -33,7 +35,6 @@ game t chat
 game y tag
 game o pick prev
 game p pick
-game return 
 game control move_down
 game a move_left
 game s move_back
