@@ -80,9 +80,10 @@ editor h toggle phy_fly
 editor k kill
 editor l slicepull
 editor grave console
-editor x op tool 0
+editor x op tool 2
 editor c op tool 3
-editor b 
+editor v op tool 1
+editor b op tool 4
 editor m toggle hud_minimap
 editor num_multiply op brush_bigger
 editor alt talk
