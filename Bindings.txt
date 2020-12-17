@@ -2,40 +2,47 @@
 
 game mouse_left attack
 game mouse_right move_up
-game mouse_middle ping
+game mouse_middle drop
 game mouse_extra_1 skill2
-game mouse_extra_2 ping
-game mouse_wheel_up weapon_prev
-game mouse_wheel_down weapon_next
+game mouse_extra_2 weapon 8
+game mouse_wheel_up ping
+game mouse_wheel_down ping
 editor mouse_left attack
 editor mouse_right move_up
+editor mouse_middle drop
 editor mouse_extra_1 toggle phy fly
-editor mouse_extra_2 toggle phy fly
+editor mouse_extra_2 drop
 editor mouse_wheel_up push
 editor mouse_wheel_down pull
-shop mouse_left attack
-shop mouse_right move_up
+spec mouse_left attack
+spec mouse_right move_up
+spec mouse_middle drop
+spec mouse_wheel_up ping
+spec mouse_wheel_down ping
 
 // Key bindings
 
 game 1 weapon 1
-game 2 weapon 6
-game 3 weapon 6
+game 2 set_block 2
+game 3 blank
 game 4 weapon 7
-game 5 
-game 6 
-game 7 
-game 8 
-game 9 
-game 0 weapon 10
-game tab scores
+game 5 say The pain you feel today is the strength you feel tomorrow.
+game 6 say The journey of a thousand miles begins with a single step.
+game 7 say Every experience, no matter how bad it seems, holds within it a blessing of some kind. The goal is to find it.
+game 8 say Your worst enemy cannot harm you as much as your own unguarded thoughts.
+game 9 say Our greatest glory is not in never falling, but in rising every time we fall.
+game 0 say By three methods we may learn wisdom: First, by reflection, which is noblest; Second, by imitation, which is easiest; and third by experience, which is the bitterest.
+game minus say When we see persons of worth, we should think of equaling them; when we see persons of a contrary character, we should turn inwards and examine ourselves.
+game equals say The superior man is distressed by the limitations of his ability; he is not distressed by the fact that men do not recognize the ability that he has.
+game backspace say The perfecting of one's self is the fundamental base of all progress and all moral development.
+game tab blank
 game q weapon 5
 game w move_forward
 game e weapon 3
 game r weapon 4
 game t chat
 game y teamchat
-game u tag
+game u blank
 game o pick prev
 game p pick
 game control move_down
@@ -43,41 +50,49 @@ game a move_left
 game s move_back
 game d move_right
 game f weapon 2
-game g 
+game g tag
 game h greet
 game j taunt
 game k 
 game grave console
 game shift move_down
 game z 
-game x weapon 8
+game x weapon 6
 game c weapon 9
 game v skill1
-game b talk
+game b buy
+game n say :)
 game alt talk
 game space zoom
-game f1 console
+game f2 restart
 game f3 ready
 game f4 toggle editor_play
 game f9 pause
 game f10 toggle dev_debug 0 4
-game f11 toggle dev_debug 0 1 2 3 5
-game f12 screenshot
-editor 1 weapon 1
-editor 2 weapon 2
-editor 3 weapon 3
+game pause 
+game scroll scores
+game f11 scores
+game f12 screenshot nohud
+editor 1 set_block 1
+editor 2 set_block 2
+editor 3 set_block 3
 editor 4 weapon 4
-editor 5 weapon 5
-editor 6 weapon 6
-editor 7 weapon 7
-editor 8 weapon 8
-editor 9 weapon 9
-editor 0 weapon 10
-editor tab scores
+editor 5 say The pain you feel today is the strength you feel tomorrow.
+editor 6 say The journey of a thousand miles begins with a single step.
+editor 7 say Every experience, no matter how bad it seems, holds within it a blessing of some kind. The goal is to find it.
+editor 8 say Your worst enemy cannot harm you as much as your own unguarded thoughts.
+editor 9 say Our greatest glory is not in never falling, but in rising every time we fall.
+editor 0 say By three methods we may learn wisdom: First, by reflection, which is noblest; Second, by imitation, which is easiest; and third by experience, which is the bitterest.
+editor minus say When we see persons of worth, we should think of equaling them; when we see persons of a contrary character, we should turn inwards and examine ourselves.
+editor equals say The superior man is distressed by the limitations of his ability; he is not distressed by the fact that men do not recognize the ability that he has.
+editor backspace say The perfecting of one's self is the fundamental base of all progress and all moral development.
+editor tab cycle
 editor w move_forward
+editor t chat
+editor y teamchat
 editor o reload_selection
 editor p slicepush
-editor control move_down
+editor control blank
 editor a move_left
 editor s move_back
 editor d move_right
@@ -86,22 +101,27 @@ editor h toggle phy_fly
 editor k kill
 editor l slicepull
 editor grave console
-editor x op tool 2
-editor c op tool 3
-editor v op tool 1
-editor b op tool 4
+editor z 
+editor x move_down
+editor c copy
+editor v paste
+editor b say :)
+editor n say :)
 editor m toggle hud_minimap
 editor num_multiply op brush_bigger
 editor alt talk
-editor f4 toggle dev_debug 0 1 2
+editor f4 toggle editor_play
 editor f5 dotell editor_snap 0.01
 editor f6 dotell editor_snap 0.05
 editor f7 dotell editor_snap 0.25
 editor f8 dotell editor_snap 1.0
 editor f9 pause
 editor f10 toggle dev_debug 0 4
+editor pause 
+editor num_7 bset offset_rot_rel -1
 editor num_8 bset offset_y_rel 1
-editor num_minus op tool 0
+editor num_9 bset offset_rot_rel 1
+editor num_minus op tool 3
 editor num_4 bset offset_x_rel -1
 editor num_5 multi /bset offset_x 0; /bset offset_y 0
 editor num_6 bset offset_x_rel 1
@@ -110,8 +130,8 @@ editor num_2 bset offset_y_rel -1
 editor num_3 op tool 4
 editor num_period op tool 2
 editor f11 toggle dev_debug 0 1 2 3 5
-editor f12 screenshot
-editor num_return op tool 3
+editor f12 screenshot nohud
+editor num_return op tool 2
 editor num_divide op brush_smaller
 editor home extend back
 editor up extend up
@@ -123,19 +143,38 @@ editor down extend down
 editor pgdn bar_down
 editor insert pastefile
 editor delete del
-shop 3 weapon 6
-shop tab scores
-shop w move_forward
-shop t chat
-shop control move_down
-shop a move_left
-shop s move_back
-shop d move_right
-shop grave console
-shop f4 toggle editor_play
-shop f9 pause
-shop f10 toggle dev_debug 0 4
-shop f11 toggle dev_debug 0 1 2 3 5
-shop f12 screenshot
+spec 1 follow 1
+spec 2 follow 2
+spec 3 follow 3
+spec 4 follow 4
+spec 5 say The pain you feel today is the strength you feel tomorrow.
+spec 6 follow 6
+spec 7 follow 7
+spec 8 follow 8
+spec 9 follow 9
+spec 0 follow 10
+spec minus say When we see persons of worth, we should think of equaling them; when we see persons of a contrary character, we should turn inwards and examine ourselves.
+spec equals say The superior man is distressed by the limitations of his ability; he is not distressed by the fact that men do not recognize the ability that he has.
+spec backspace say The perfecting of one's self is the fundamental base of all progress and all moral development.
+spec tab scores
+spec w move_forward
+spec t chat
+spec y teamchat
+spec control move_down
+spec a move_left
+spec s move_back
+spec d move_right
+spec l casterlock
+spec grave console
+spec z 
+spec b blank
+spec n say :)
+spec alt talk
+spec f4 toggle editor_play
+spec f9 pause
+spec f10 toggle dev_debug 0 4
+spec pause pause
+spec f11 toggle dev_debug 0 1 2 3 5
+spec f12 screenshot nohud
 editor ctrl-c copy
 editor ctrl-v paste
