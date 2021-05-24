@@ -2,9 +2,9 @@
 
 game mouse_left attack
 game mouse_right move_up
-game mouse_middle drop
-game mouse_extra_1 skill2
-game mouse_extra_2 weapon 8
+game mouse_middle skill2
+game mouse_extra_1 attack2
+game mouse_extra_2 tag
 game mouse_wheel_up ping
 game mouse_wheel_down ping
 editor mouse_left attack
@@ -50,13 +50,13 @@ game a move_left
 game s move_back
 game d move_right
 game f weapon 2
-game g tag
-game h greet
+game g weapon 8
+game h toggle phy_fly
 game j taunt
 game k 
 game grave console
 game shift move_down
-game z 
+game z drop
 game x weapon 6
 game c weapon 9
 game v skill1
@@ -67,10 +67,12 @@ game space zoom
 game f2 restart
 game f3 ready
 game f4 toggle editor_play
+game f5 vote yes
+game f6 vote no
 game f9 pause
 game f10 toggle dev_debug 0 4
 game pause 
-game scroll scores
+game scroll blank
 game f11 scores
 game f12 screenshot nohud
 editor 1 set_block 1
@@ -101,7 +103,6 @@ editor h toggle phy_fly
 editor k kill
 editor l slicepull
 editor grave console
-editor z 
 editor x move_down
 editor c copy
 editor v paste
@@ -164,13 +165,15 @@ spec control move_down
 spec a move_left
 spec s move_back
 spec d move_right
+spec h toggle phy_fly
 spec l casterlock
 spec grave console
-spec z 
 spec b blank
 spec n say :)
 spec alt talk
 spec f4 toggle editor_play
+spec f5 vote yes
+spec f6 vote no
 spec f9 pause
 spec f10 toggle dev_debug 0 4
 spec pause pause
